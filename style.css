@@ -1,99 +1,155 @@
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #000;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5;
-  color: #333;
+  padding: 0;
 }
 
 .container {
-  max-width: 900px;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-/* Hero */
+header {
+  background: #fff;
+  border-bottom: 2px solid #F7B500;
+  padding: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #F7B500;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
 .hero {
-  background: linear-gradient(to right, #3a8bfd, #6d5dfc);
-  color: white;
+  background: #F7B500;
+  color: #000;
+  padding: 4rem 0;
   text-align: center;
-  padding: 3rem 2rem;
 }
 
-.hero h1 {
+.hero h2 {
   font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.4rem;
-  background: white;
-  color: #3a8bfd;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
+.section {
+  padding: 4rem 0;
 }
 
-.btn:hover {
-  background: #e5e5e5;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.socials a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: underline;
+.project {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
-/* About */
-.about {
-  background: white;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  border-radius: 10px;
-  margin: 2rem 0;
+.project h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Projects */
-.projects h2 {
-  margin-top: 0;
-}
-
-.project-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
-  transition: transform 0.2s;
-}
-
-.project-card:hover {
-  transform: scale(1.01);
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  margin-right: 15px;
-  color: #3a8bfd;
+.gold-link {
+  color: #F7B500;
   text-decoration: none;
   font-weight: bold;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.contact-section {
+  background-color: #f9f9f9;
 }
 
-/* Footer */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #F7B500;
+  color: #000;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .footer {
-  text-align: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
   padding: 2rem 1rem;
-  font-size: 0.9rem;
-  background: #fafafa;
-  color: #888;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: #F7B500;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.footer img {
+  width: 24px;
+  margin-right: 0.5rem;
 }

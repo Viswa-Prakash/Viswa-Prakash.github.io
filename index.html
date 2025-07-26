@@ -3,60 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viswa Prakash – GenAI & Agentic AI Projects</title>
+  <title>Viswa Prakash | AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>👋 Hi, I'm Viswa Prakash</h1>
-      <p>GenAI Developer | Agentic AI Innovator | MLOps Enthusiast</p>
-      <a class="btn" href="https://your-resume-link.com" target="_blank">📄 View My Resume</a>
-      <div class="socials">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      </div>
+  <header>
+    <div class="container header">
+      <h1 class="logo">Viswa Prakash<span class="dot"></span></h1>
+      <nav>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
+  <section class="hero">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I specialize in building agentic GenAI applications using LangGraph, LangChain, Streamlit, Flask, and advanced ML pipelines. I'm passionate about automating real-world use cases—from financial assistants to medical advisors.</p>
+      <h2>Hey, I'm Viswa Prakash.</h2>
+      <p>AI Engineer specialized in GenAI, MLOps, and agentic applications.</p>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects">
+  <section id="resume" class="section">
     <div class="container">
-      <h2>My Projects</h2>
-
-      <div class="project-card">
-        <h3>💸 Financial Assistant Agent</h3>
-        <p>React-style agent that reasons and selects tools for financial Q&A. Built with LangGraph + Tool Routing.</p>
-        <a href="https://financial-advisor-multitool-react-agent.onrender.com/" target="_blank">🚀 Live Demo</a>
-        <a href="https://github.com/Viswa-Prakash/Financial_Agent_MultiTool_ReACT" target="_blank">📁 GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>🩺 Symptom Checker Agent</h3>
-        <p>Uses medical tools to evaluate symptoms and suggest conditions + drugs. Integrated with drug APIs.</p>
-        <a href="https://your-live-link.onrender.com" target="_blank">🚀 Live Demo</a>
-        <a href="https://github.com/yourusername/genai-medical-agent" target="_blank">📁 GitHub</a>
-      </div>
-
-      <!-- Add more project cards here -->
-
+      <h2>Resume</h2>
+      <p><strong>Skills:</strong> Python, TensorFlow, LangChain, MLflow, Streamlit, AWS, GitHub Actions</p>
+      <p><strong>Education:</strong> B.Tech in Computer Science</p>
+      <p><a class="gold-link" href="assets/Viswa_Prakash_Resume.pdf" download>Download Resume</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Viswa Prakash · Built with 💻 + ☕</p>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Medical Agent (Symptom Checker & Drug Advisor)</h3>
+        <p>LangGraph-based agent that can check symptoms, suggest medicines, and cross-check interactions using real-time tools.</p>
+        <a class="gold-link" href="https://demo-med-agent.render.com" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <h3>Financial React Agent</h3>
+        <p>Multi-tool react agent answering investment-related queries using real-time currency, stock, and event tools.</p>
+        <a class="gold-link" href="https://demo-fin-agent.render.com" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <h3>Lung Disease Classifier</h3>
+        <p>EfficientNetB0-based model with a full MLOps pipeline, model registry, and Streamlit frontend hosted on Render.</p>
+        <a class="gold-link" href="https://lung-detect-ai.render.com" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Looking forward to hearing from you</p>
+        <p><strong>Phone</strong><br />+91-98765-43210</p>
+        <p><strong>Email</strong><br />viswa@email.com</p>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-grid">
+          <input type="text" name="first" placeholder="First Name *" required />
+          <input type="text" name="last" placeholder="Last Name *" required />
+          <input type="email" name="email" placeholder="Email *" required />
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <p><strong>Phone</strong><br />+91-98765-43210</p>
+        <p><strong>Email</strong><br />viswa@email.com</p>
+      </div>
+      <div>
+        <p><strong>Follow Me</strong></p>
+        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/github.svg" alt="GitHub" /></a>
+      </div>
+      <div>
+        <p>&copy; 2025 Viswa Prakash</p>
+      </div>
+    </div>
   </footer>
-
 </body>
 </html>
