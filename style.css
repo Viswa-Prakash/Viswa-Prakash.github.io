@@ -40,12 +40,13 @@ h1, h2, h3, p {
 }
 
 .logo h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .logo .role {
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #444;
   margin-left: 5px;
 }
@@ -58,38 +59,37 @@ h1, h2, h3, p {
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center items */
   align-items: center;
-  padding: 80px 60px;
+  padding: 80px 20px; /* Adjust for better spacing */
   flex-wrap: wrap;
-  gap: 40px;
+  text-align: center; /* Center the text */
+}
+
+.profile-pic {
+  margin-right: 40px; /* Space between image and text */
 }
 
 .profile-pic img {
-  width: 400px;
-  height: 400px;
+  width: 300px; /* Adjusted width */
+  height: 300px; /* Adjusted height */
   object-fit: cover;
   border-radius: 50%;
-  filter: grayscale(100%);
-  border: 5px solid #f7b500;
+  border: 5px solid #F7B500; /* Gold border */
 }
 
 .intro-text {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  text-align: left;
+  max-width: 400px; /* Limit width for better layout */
 }
 
 .intro-text h2 {
-  font-size: 3rem;
+  font-size: 3rem; /* Adjust size */
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .intro-text h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
+  margin-top: 10px;
+  font-size: 1.5rem; /* Adjust size */
   font-weight: 600;
 }
 
@@ -98,16 +98,13 @@ h1, h2, h3, p {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
-  max-width: 500px;
 }
 
 /* Buttons */
 .buttons {
-  margin-left: -10px;  /* Shift all buttons slightly left */
   margin-top: 30px;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -117,17 +114,13 @@ h1, h2, h3, p {
   border-radius: 50%;
   font-weight: bold;
   color: black;
-  border: 2px solid black;
-  font-size: 1.1rem;        /* Slightly larger font */
-  letter-spacing: 0.5px;    /* Helps balance smaller words */
-  word-spacing: 1px;
-  text-align: center;
-
+  border: none;
+  font-size: 1.1rem;
   width: 120px;
   height: 120px;
   padding: 0;
   transition: transform 0.2s ease;
-  text-transform: uppercase; /* Optional: makes all text look uniform in size */
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -143,10 +136,8 @@ h1, h2, h3, p {
 }
 
 .btn.contact {
-  background-color: #80DEEA; /* Blue */
+  background-color: #80DEEA; /* Light Blue */
 }
-
-
 
 /* Footer */
 .footer {
@@ -179,6 +170,9 @@ h1, h2, h3, p {
   margin-top: 20px;
 }
 
+/* --------------------------------------------------------------------- */
+
+
 /* Resume Page */
 .resume {
   padding: 2rem;
@@ -208,6 +202,9 @@ h1, h2, h3, p {
   margin: 0.25rem 0;
   font-size: 1rem;
 }
+
+/* --------------------------------------------------------------------- */
+
 
 /* Projects Page */
 .projects {
@@ -263,11 +260,14 @@ h1, h2, h3, p {
   background-color: #e6a400;
 }
 
+/* --------------------------------------------------------------------- */
+
+
 /* Contact Page Styling */
 .contact-section {
   padding: 2rem 1rem;
   max-width: 800px;
-  margin: 5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
 .contact-section h1 {
