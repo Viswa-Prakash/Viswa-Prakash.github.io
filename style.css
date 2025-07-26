@@ -59,11 +59,10 @@ h1, h2, h3, p {
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: center; /* Center items */
+  justify-content: flex-start; /* Align items to the left */
   align-items: center;
-  padding: 60px 20px; /* Adjust for better spacing */
-  flex-wrap: wrap;
-  text-align: center; /* Center the text */
+  padding: 80px 20px; /* Adjust for better spacing */
+  text-align: center; /* Center text in intro-text */
 }
 
 .profile-pic {
@@ -80,16 +79,17 @@ h1, h2, h3, p {
 
 .intro-text {
   max-width: 400px; /* Limit width for better layout */
+  text-align: left; /* Align text to the left */
 }
 
 .intro-text h2 {
-  font-size: 4rem; /* Increased size for emphasis */
+  font-size: 4rem; /* Adjusted size for emphasis */
   font-weight: bold;
 }
 
 .intro-text h3 {
   margin-top: 10px;
-  font-size: 1.5rem; /* Adjusted size */
+  font-size: 1.5rem; /* Adjust size */
   font-weight: 600;
 }
 
@@ -104,7 +104,7 @@ h1, h2, h3, p {
 .buttons {
   margin-top: 30px;
   display: flex;
-  justify-content: center; /* Center the buttons */
+  justify-content: flex-start; /* Align buttons to the left */
   gap: 20px;
 }
 
@@ -112,13 +112,13 @@ h1, h2, h3, p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 50%; /* Full circle */
   font-weight: bold;
   color: black;
   border: none;
-  font-size: 1.2rem; /* Slightly larger font */
-  width: 120px;
-  height: 120px;
+  font-size: 1rem; /* Adjusted for better appearance */
+  width: 120px; /* Same diameter for all buttons */
+  height: 120px; /* Match height to diameter */
   padding: 0;
   transition: transform 0.2s ease;
   text-transform: uppercase;
@@ -192,9 +192,5 @@ h1, h2, h3, p {
 
   .buttons {
     justify-content: center;
-  }
-
-  .profile-pic {
-    margin: 0; /* Remove margin on smaller screens */
   }
 }
