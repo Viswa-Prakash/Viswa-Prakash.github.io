@@ -117,7 +117,7 @@ h1, h2, h3, p {
   font-weight: bold;
   color: black;
   border: 2px solid black;
-  font-size: 1.2rem; /* optional if no text */
+  font-size: 0.9rem; /* optional if no text */
   transition: transform 0.2s ease;
   text-align: center;
 
