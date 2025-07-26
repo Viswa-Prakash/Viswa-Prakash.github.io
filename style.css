@@ -103,61 +103,47 @@ h1, h2, h3, p {
 
 /* Buttons */
 .buttons {
-  margin-left: -10px; /* Shift entire group to the left */
+  margin-left: -10px;  /* Shift all buttons slightly left */
   margin-top: 30px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   font-weight: bold;
   color: black;
   border: 2px solid black;
-  font-size: 0.85rem;
-  transition: transform 0.2s ease;
+  font-size: 1rem;
   text-align: center;
-  text-decoration: none;
 
-  width: 130px;
-  height: 130px;
+  width: 120px;       /* All buttons same size */
+  height: 120px;
+  line-height: 120px; /* Ensures text is vertically centered */
   padding: 0;
-
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .btn:hover {
   transform: scale(1.05);
 }
 
-.circle-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-.circle-content i {
-  font-size: 1.8rem;
-}
-
 .btn.resume {
-  background-color: #F7B500;
+  background-color: #F7B500; /* Gold */
 }
 
 .btn.projects {
-  background-color: #F44336;
+  background-color: #F44336; /* Red */
 }
 
 .btn.contact {
-  background-color: #80DEEA;
+  background-color: #80DEEA; /* Blue */
 }
+
 
 
 /* Footer */
