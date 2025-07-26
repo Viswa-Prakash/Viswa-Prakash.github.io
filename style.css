@@ -128,20 +128,20 @@ h1, h2, h3, p {
 }
 
 .btn.resume {
-  width: 80px;
-  height: 80px;
+  width: 10px;
+  height: 10px;
   background-color: #F7B500;
 }
 
 .btn.projects {
-  width: 80px;
-  height: 80px;
+  width: 10px;
+  height: 10px;
   background-color: #F44336;
 }
 
 .btn.contact {
-  width: 80px;
-  height: 80px;
+  width: 10px;
+  height: 10px;
   background-color: #80DEEA;
 }
 
