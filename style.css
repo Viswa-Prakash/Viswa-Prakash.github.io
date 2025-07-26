@@ -141,59 +141,44 @@ h1, h2, h3, p {
   background-color: #80DEEA; /* Light Blue */
 }
 
-/* Technologies Section */
+/* Tools and Technologies Section */
 .technologies {
-  padding: 40px 20px;
-  text-align: center; /* Center the title */
+    padding: 40px 20px;
+    text-align: center; /* Center the title */
 }
 
 .technologies h2 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-category {
+    margin-bottom: 30px; /* Space between categories */
+}
+
+.tech-category h3 {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 10px; /* Space below subheading */
 }
 
 .tech-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow symbols to wrap */
-  gap: 15px; /* Space between items */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow icons to wrap */
+    gap: 15px; /* Space between items */
 }
 
 .tech-icons span {
-  background-color: #f0f0f0; /* Light background for icons */
-  padding: 10px 15px;
-  border-radius: 10px; /* Rounded corners */
-  font-size: 1rem;
+    background-color: #f0f0f0; /* Light background for icons */
+    padding: 10px 15px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem;
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 40px 20px;
-  font-size: 0.85rem;
-  border-top: 1px solid #ddd;
-  background-color: #ffffff;
-  color: #222;
-}
-
-.footer-item {
-  margin: 10px 0;
-  text-align: left;
-  min-width: 180px;
-}
-
-.footer-item a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.credit {
-  font-size: 0.75rem;
-  text-align: right;
-  flex: 1 0 100%;
-  margin-top: 20px;
+/* Optional: Style for the SVG or icon images */
+.icon {
+    margin-right: 5px; /* Space between icon and text */
 }
 
 /* Responsive */
