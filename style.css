@@ -265,10 +265,11 @@ h1, h2, h3, p {
 
 /* Contact Page */
 .contact-section h1 {
-  padding: 2rem;
-  max-width: 600px;
+  padding: 2rem 0 0 0;
   margin-top: 5rem;
+  margin-bottom: 1rem;  /* Add this */
 }
+
 
 .contact-form {
   display: flex;
@@ -293,12 +294,14 @@ h1, h2, h3, p {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  padding: 0.6rem 1.5rem; /* controls height and width */
-  border-radius: 6px;      /* smooth corners */
+  padding: 0.5rem 1.2rem; /* Slimmer rectangle */
+  border-radius: 8px;      /* More rounded sides */
   font-size: 1rem;
   transition: background-color 0.3s ease;
-  align-self: flex-start; /* keeps it from stretching full width */
+  align-self: flex-start;
+  width: fit-content; /* ensures it doesn't stretch */
 }
+
 
 
 .contact-form .btn:hover {
