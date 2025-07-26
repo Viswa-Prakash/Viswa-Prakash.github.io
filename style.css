@@ -267,7 +267,7 @@ h1, h2, h3, p {
 .contact-section {
   padding: 2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .contact-form {
@@ -293,6 +293,8 @@ h1, h2, h3, p {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  padding: 0.6rem 1.5rem; /* controls height and width */
+  border-radius: 6px;      /* smooth corners */
   padding: 0.75rem;
   border-radius: 4px;
   transition: background-color 0.3s;
