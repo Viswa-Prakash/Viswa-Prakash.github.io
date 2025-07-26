@@ -62,7 +62,7 @@ h1, h2, h3, p {
   justify-content: flex-start; /* Align items to the left */
   align-items: center;
   padding: 80px 20px; /* Adjust for better spacing */
-  text-align: left; /* Center text in intro-text */
+  text-align: center; /* Center text in intro-text */
 }
 
 .profile-pic {
@@ -70,15 +70,15 @@ h1, h2, h3, p {
 }
 
 .profile-pic img {
-  width: 350px; /* Adjusted width */
-  height: 350px; /* Adjusted height */
+  width: 250px; /* Adjusted width */
+  height: 250px; /* Adjusted height */
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #F7B500; /* Gold border */
 }
 
 .intro-text {
-  max-width: 600px; /* Limit width for better layout */
+  max-width: 400px; /* Limit width for better layout */
   text-align: left; /* Align text to the left */
 }
 
@@ -112,13 +112,13 @@ h1, h2, h3, p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* Full circle */
+  border-radius: 10px; /* Rounded corners */
   font-weight: bold;
   color: black;
   border: none;
   font-size: 1rem; /* Adjusted for better appearance */
-  width: 120px; /* Same diameter for all buttons */
-  height: 120px; /* Match height to diameter */
+  width: 150px; /* Set width for rectangles */
+  height: 60px; /* Set height for rectangles */
   padding: 0;
   transition: transform 0.2s ease;
   text-transform: uppercase;
@@ -138,6 +138,30 @@ h1, h2, h3, p {
 
 .btn.contact {
   background-color: #80DEEA; /* Light Blue */
+}
+
+/* Technologies Section */
+.technologies {
+  padding: 40px 20px;
+  text-align: center; /* Center the title */
+}
+
+.technologies h2 {
+  margin-bottom: 20px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow symbols to wrap */
+  gap: 15px; /* Space between items */
+}
+
+.tech-icons span {
+  background-color: #f0f0f0; /* Light background for icons */
+  padding: 10px 15px;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem;
 }
 
 /* Footer */
