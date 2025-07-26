@@ -5,18 +5,25 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   color: #000000;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
 .header {
   background-color: #f7b500;
-  padding: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .nav {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   padding: 0;
   margin: 0;
@@ -24,7 +31,6 @@ body {
 
 .nav li a {
   color: #000;
-  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -39,6 +45,8 @@ body {
   padding: 1rem;
   background-color: #f7b500;
   color: #000;
+  font-size: 0.95rem;
+  margin-top: 3rem;
 }
 
 /* Resume Page */
@@ -49,9 +57,10 @@ body {
 }
 
 .resume h1 {
-  border-bottom: 2px solid #f7b500;
+  border-bottom: 3px solid #f7b500;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .section {
@@ -61,13 +70,16 @@ body {
 .section h2 {
   color: #f7b500;
   margin-bottom: 0.5rem;
+  font-size: 1.4rem;
 }
 
-.section p, .section ul {
+.section p,
+.section ul {
   margin: 0.25rem 0;
+  font-size: 1rem;
 }
 
-/* Project Cards */
+/* Projects Page */
 .projects {
   padding: 2rem;
   max-width: 1000px;
@@ -75,30 +87,34 @@ body {
 }
 
 .project-card {
-  background: #f9f9f9;
-  border: 1px solid #eee;
-  border-left: 5px solid #f7b500;
+  background: #fdfdfd;
+  border: 1px solid #e2e2e2;
+  border-left: 6px solid #f7b500;
   padding: 1.5rem;
   margin-bottom: 2rem;
   transition: box-shadow 0.3s ease;
+  border-radius: 5px;
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .project-title {
   margin: 0;
+  font-size: 1.5rem;
   color: #000;
 }
 
 .project-tech {
   font-style: italic;
-  margin: 0.5rem 0;
+  color: #333;
+  margin: 0.4rem 0 1rem 0;
 }
 
 .project-desc {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .project-links .btn {
@@ -108,7 +124,8 @@ body {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
@@ -136,6 +153,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  background-color: #fff;
+  color: #000;
 }
 
 .contact-form .btn {
@@ -156,9 +175,21 @@ body {
 .contact-details {
   margin-top: 2rem;
   font-size: 1rem;
-  line-height: 1.6;
 }
 
 .contact-details p strong {
   color: #f7b500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-links .btn {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }
