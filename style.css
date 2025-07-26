@@ -118,14 +118,16 @@ h1, h2, h3, p {
   font-weight: bold;
   color: black;
   border: 2px solid black;
-  font-size: 1rem;
+  font-size: 1.1rem;        /* Slightly larger font */
+  letter-spacing: 0.5px;    /* Helps balance smaller words */
+  word-spacing: 1px;
   text-align: center;
 
-  width: 120px;       /* All buttons same size */
+  width: 120px;
   height: 120px;
-  line-height: 120px; /* Ensures text is vertically centered */
   padding: 0;
   transition: transform 0.2s ease;
+  text-transform: uppercase; /* Optional: makes all text look uniform in size */
 }
 
 .btn:hover {
