@@ -70,8 +70,8 @@ h1, h2, h3, p {
 }
 
 .profile-pic img {
-  width: 250px; /* Adjusted width */
-  height: 250px; /* Adjusted height */
+  width: 350px; /* Adjusted width */
+  height: 350px; /* Adjusted height */
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #F7B500; /* Gold border */
