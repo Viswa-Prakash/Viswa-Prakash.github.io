@@ -5,97 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Viswa Prakash | AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container header">
-      <h1 class="logo">Viswa Prakash<span class="dot"></span></h1>
-      <nav>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header class="header">
+    <div class="logo">Viswa Prakash<span class="dot"></span></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Hey, I'm Viswa Prakash.</h2>
-      <p>AI Engineer specialized in GenAI, MLOps, and agentic applications.</p>
-    </div>
-  </section>
-
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Resume</h2>
-      <p><strong>Skills:</strong> Python, TensorFlow, LangChain, MLflow, Streamlit, AWS, GitHub Actions</p>
-      <p><strong>Education:</strong> B.Tech in Computer Science</p>
-      <p><a class="gold-link" href="assets/Viswa_Prakash_Resume.pdf" download>Download Resume</a></p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Medical Agent (Symptom Checker & Drug Advisor)</h3>
-        <p>LangGraph-based agent that can check symptoms, suggest medicines, and cross-check interactions using real-time tools.</p>
-        <a class="gold-link" href="https://demo-med-agent.render.com" target="_blank">Live Demo</a>
-      </div>
-
-      <div class="project">
-        <h3>Financial React Agent</h3>
-        <p>Multi-tool react agent answering investment-related queries using real-time currency, stock, and event tools.</p>
-        <a class="gold-link" href="https://demo-fin-agent.render.com" target="_blank">Live Demo</a>
-      </div>
-
-      <div class="project">
-        <h3>Lung Disease Classifier</h3>
-        <p>EfficientNetB0-based model with a full MLOps pipeline, model registry, and Streamlit frontend hosted on Render.</p>
-        <a class="gold-link" href="https://lung-detect-ai.render.com" target="_blank">Live Demo</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="container contact">
-      <div class="contact-info">
-        <h2>Contact</h2>
-        <p>Looking forward to hearing from you</p>
-        <p><strong>Phone</strong><br />+91-98765-43210</p>
-        <p><strong>Email</strong><br />viswa@email.com</p>
-      </div>
-
-      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <div class="form-grid">
-          <input type="text" name="first" placeholder="First Name *" required />
-          <input type="text" name="last" placeholder="Last Name *" required />
-          <input type="email" name="email" placeholder="Email *" required />
-          <input type="text" name="subject" placeholder="Subject" />
-        </div>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
+  <main class="hero-section">
+    <h1>Hi, I'm Viswa</h1>
+    <p>AI Engineer | GenAI | Agentic AI | MLOps</p>
+    <a href="resume.html" class="btn">View Resume</a>
+  </main>
 
   <footer>
-    <div class="container footer">
-      <div>
-        <p><strong>Phone</strong><br />+91-98765-43210</p>
-        <p><strong>Email</strong><br />viswa@email.com</p>
-      </div>
-      <div>
-        <p><strong>Follow Me</strong></p>
-        <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/github.svg" alt="GitHub" /></a>
-      </div>
-      <div>
-        <p>&copy; 2025 Viswa Prakash</p>
-      </div>
-    </div>
+    <p>&copy; 2025 Viswa Prakash. All rights reserved.</p>
   </footer>
 </body>
 </html>
