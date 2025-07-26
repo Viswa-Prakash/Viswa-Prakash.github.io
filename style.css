@@ -58,28 +58,29 @@ h1, h2, h3, p {
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center;
-  padding: 80px 20px; /* Adjust for better spacing */
-  text-align: center; /* Center text in intro-text */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the start vertically */
+    padding: 80px 20px; /* Adjust for better spacing */
+    gap: 40px; /* Space between the image and text */
 }
 
 .profile-pic {
-  margin-right: 40px; /* Space between image and text */
+    flex: 0 0 350px; /* Set the width for the profile picture */
+    margin-right: 20px; /* Optional: add some margin right */
 }
 
 .profile-pic img {
-  width: 250px; /* Adjusted width */
-  height: 250px; /* Adjusted height */
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #F7B500; /* Gold border */
+    width: 350px; /* Adjusted width */
+    height: 350px; /* Adjusted height */
+    object-fit: cover;
+    border-radius: 50%; /* Keeps it circular */
+    border: 5px solid #F7B500; /* Gold border */
 }
 
 .intro-text {
-  max-width: 400px; /* Limit width for better layout */
-  text-align: left; /* Align text to the left */
+    max-width: 400px; /* Limit width for better layout */
+    text-align: left; /* Align text to the left */
 }
 
 .intro-text h2 {
